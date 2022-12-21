@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:luminarproject/ListPage.dart';
 import 'package:luminarproject/home.dart';
+import 'package:luminarproject/login%20with%20validation.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => LoginForm()));
     });
   }
 
@@ -31,11 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         color: Colors.lightBlue,
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                    "https://i.pinimg.com/originals/eb/2d/52/eb2d523bf946383e6df6159e094e5cbf.jpg"))),
+       //
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
