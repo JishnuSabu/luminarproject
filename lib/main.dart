@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               const Text(
                 "Gallery",
-                style: TextStyle(fontSize: 40, color: Colors.blueAccent),
+                style: TextStyle(fontSize: 40, color: Colors.white),
               ),
             ],
           ),
