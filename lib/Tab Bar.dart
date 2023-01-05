@@ -6,7 +6,7 @@ void main() {
   runApp(MaterialApp(
     home: MyTab(),
     theme: ThemeData(
-      colorScheme: ColorScheme.fromSwatch().copyWith(primary: Color(0xFF00695C)),
+      colorScheme: ColorScheme.fromSwatch().copyWith(primary: const Color(0xFF00695C)),
     ),
   ));
 }
