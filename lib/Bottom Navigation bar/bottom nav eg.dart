@@ -31,7 +31,7 @@ class _BottomNavState extends State<BottomNav> {
           onTap:(tapindex){
           setState(() {
             index = tapindex;
-          });
+          },);
           },
           items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home)),
