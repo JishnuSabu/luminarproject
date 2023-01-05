@@ -38,7 +38,7 @@ class _BottomNavState extends State<BottomNav> {
         BottomNavigationBarItem(icon: Icon(Icons.favorite)),
         BottomNavigationBarItem(icon: Icon(Icons.supervised_user_circle_sharp)),
         BottomNavigationBarItem(icon: Icon(Icons.search)),
-      ]),
+      ],),
       body: screen[index],
     );
   }
