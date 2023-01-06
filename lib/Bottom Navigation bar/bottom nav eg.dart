@@ -34,10 +34,10 @@ class _BottomNavState extends State<BottomNav> {
           },);
           },
           items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite)),
-        BottomNavigationBarItem(icon: Icon(Icons.supervised_user_circle_sharp)),
-        BottomNavigationBarItem(icon: Icon(Icons.search)),
+        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite),label: "Favorite"),
+        BottomNavigationBarItem(icon: Icon(Icons.supervised_user_circle_sharp),label: "User"),
+        BottomNavigationBarItem(icon: Icon(Icons.search),label: "Search"),
       ],),
       body: screen[index],
     );
