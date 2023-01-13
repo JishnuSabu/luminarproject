@@ -149,9 +149,7 @@ These buttons control the next card down!""",
                       vertical: 8.0,
                     ),
                     child: Text(
-                      """Hi there, I'm a drop-in replacement for Flutter's ExpansionTile.
-Use me any time you think your app could benefit from being just a bit more Material.
-These buttons control the card above!""",
+                      "This Full Stack Java Developer Course in India is designed to give you the essence of front-end, middleware, and back-end Java web developer technologies. You will learn to build an end-to-end application, test and deploy code, store data using MongoDB, and much more.",
                       style: Theme.of(context)
                           .textTheme
                           .bodyText2!
