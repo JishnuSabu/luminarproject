@@ -142,6 +142,7 @@ These buttons control the next card down!""",
                   height: 1.0,
                 ),
                 Align(
+
                   alignment: Alignment.centerLeft,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
