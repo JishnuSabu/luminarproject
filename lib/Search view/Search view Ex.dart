@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                   setState(() {
                     foodListSearch = foodList
                         .where(
-                            (element) => element.contains(value))
+                            (element) => element.toLowerCase().contains(value.toLowerCase()))
                         .toList();
                   });
                 },
