@@ -28,6 +28,7 @@ class _BottomNavState extends State<BottomNav> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
+
           onTap:(tapindex){
           setState(() {
             index = tapindex;

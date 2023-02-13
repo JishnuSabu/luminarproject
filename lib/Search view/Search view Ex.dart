@@ -45,12 +45,15 @@ class _HomePageState extends State<HomePage> {
                         .where(
                             (element) => element.toLowerCase().contains(value.toLowerCase()))
                         .toList();
+                    if(_textEditingController!.text.isNotEmpty && foodListSearch.length == 0){
+                    foodListSearch;
+                    }
                   });
                 },
               ),
             )),
         body: _textEditingController!.text.isNotEmpty &&
-            foodListSearch!.length == 0
+            foodListSearch.length == 0
             ? const Center(
           child: Padding(
             padding: EdgeInsets.all(8.0),
@@ -62,8 +65,8 @@ class _HomePageState extends State<HomePage> {
           ),
         )
             : ListView.builder(
-            itemCount: _textEditingController!.text.isEmpty
-                ? foodList!.length
+            itemCount:_textEditingController!.text.isEmpty
+                ? foodList.length
                 : foodListSearch.length,
             itemBuilder: (ctx, index) {
               return Padding(
