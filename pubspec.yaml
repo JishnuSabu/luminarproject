@@ -39,6 +39,7 @@ dependencies:
   onboarding_screen: ^0.0.3
   searchable_listview: ^2.2.1
   shared_preferences: ^2.0.17
+  sqflite: ^2.2.4+1
 
 
   # The following adds the Cupertino Icons font to your application.
