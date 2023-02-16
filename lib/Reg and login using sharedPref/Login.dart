@@ -34,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   late bool newuser;
   late String uname;
   late String pswd;
+  late String name;
 
   @override
   void initState() {
@@ -44,6 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   void getvalue() async {
     logindata = await SharedPreferences.getInstance();
     setState(() {
+      name = logindata.getString('name')!;
       uname = logindata.getString('username')!;
       pswd = logindata.getString('password')!;
     });
@@ -52,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
   void check_if_already_login() async {
     logindata = await SharedPreferences.getInstance();
     newuser = (logindata.getBool('newuser') ?? true); // null ?? second
-    print("New user");
+
     if (newuser == false) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Home()));

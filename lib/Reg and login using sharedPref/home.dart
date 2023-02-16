@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:luminarproject/Reg%20and%20login%20using%20sharedPref/Login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
-
-class Home extends StatefulWidget{
-
+class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
@@ -42,7 +39,8 @@ class _HomeState extends State<Home> {
             Center(
               child: Text(
                 'Hai $name Welcome To Luminar ',
-                style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ),
             ElevatedButton(
